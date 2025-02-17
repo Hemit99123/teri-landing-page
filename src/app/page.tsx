@@ -39,6 +39,9 @@ export default function LandingPage() {
             The Equitable Research Initiative (TERI) is revolutionizing DEI policies to create genuinely inclusive
             workplaces where everyone thrives.
           </p>
+          <button className="mt-6 bg-white text-black px-6 py-3 text-lg font-semibold rounded-lg hover:bg-gray-200 transition flex items-center mx-auto">
+            Join the Movement <ArrowRight className="ml-2" />
+          </button>
         </div>
       </section>
 
@@ -94,41 +97,12 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section id="impact" className="py-20 bg-white text-black">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center">Our Impact</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Case Study: Tech Giant Transformation</h3>
-              <p className="mb-4">We helped a leading tech company revamp their DEI policies, resulting in:</p>
-              <ul className="list-disc list-inside mb-4">
-                <li>30% increase in employee satisfaction</li>
-                <li>25% reduction in turnover rates</li>
-                <li>40% improvement in innovation metrics</li>
-              </ul>
-              <button className="bg-black px-4 py-2 text-white hover:bg-gray-800">Read Full Case Study</button>
-            </div>
-            <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Testimonials</h3>
-              <blockquote className="italic mb-4">
-                "TERI's approach to DEI has transformed our company culture. We've seen remarkable improvements in
-                employee engagement and productivity."
-              </blockquote>
-              <p className="font-bold">- CEO, Fortune 500 Company</p>
-              <button className="mt-4 bg-black px-4 py-2 text-white hover:bg-gray-800">More Success Stories</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <div>
           <div className="mt-8 mb-8 pt-8 border-t border-gray-800 text-center">
             <p>&copy; {new Date().getFullYear()} The Equitable Research Initiative (TERI). All rights reserved.</p>
           </div>
         </div>
-        
     </div>
   )
 }
@@ -148,5 +122,3 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
     </div>
   );
 };
-
-
