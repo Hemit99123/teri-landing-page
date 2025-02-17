@@ -1,5 +1,6 @@
 import { ArrowRight, Target, Zap, RefreshCw } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link";
 import { ReactNode } from "react";
 
 export default function LandingPage() {
@@ -39,9 +40,13 @@ export default function LandingPage() {
             The Equitable Research Initiative (TERI) is revolutionizing DEI policies to create genuinely inclusive
             workplaces where everyone thrives.
           </p>
-          <button className="mt-6 bg-white text-black px-6 py-3 text-lg font-semibold rounded-lg hover:bg-gray-200 transition flex items-center mx-auto">
-            Join the Movement <ArrowRight className="ml-2" />
-          </button>
+          <Link 
+  href="/reports/comingsoon" 
+  className="mt-6 w-1/2 bg-white text-black px-6 py-3 text-lg font-semibold rounded-lg hover:bg-gray-200 transition flex items-center justify-center text-center mx-auto"
+>
+  Read our report <ArrowRight className="ml-2" />
+</Link>
+
         </div>
       </section>
 
