@@ -52,7 +52,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg mb-6">
-                At TERI, we believe that true equity goes beyond diversity quotas. We're committed to reshaping DEI
+                At TERI, we believe that true equity goes beyond diversity quotas. We&apos;re committed to reshaping DEI
                 policies to focus on meaningful inclusivity and equitable opportunities for all.
               </p>
               <p className="text-lg mb-6">
