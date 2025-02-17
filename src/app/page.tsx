@@ -11,7 +11,7 @@ export default function LandingPage() {
         <div className="container mx-auto flex items-center justify-between py-4">
           <div className="flex items-center space-x-2">
             <div className="h-8 w-8 bg-white rounded-full"></div>
-            <span className="text-xl font-bold">TERI</span>
+            <span className="text-xl font-bold">DEI360</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#about" className="hover:text-gray-300">
@@ -19,9 +19,6 @@ export default function LandingPage() {
             </a>
             <a href="#approach" className="hover:text-gray-300">
               Our Approach
-            </a>
-            <a href="#impact" className="hover:text-gray-300">
-              Impact
             </a>
           </div>
           <button className="bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200">Get Involved</button>
@@ -37,7 +34,7 @@ export default function LandingPage() {
         <div className="relative z-10 text-center px-4">
           <h1 className="mb-6 text-5xl font-bold leading-tight md:text-7xl">Redefining DEI for True Equity</h1>
           <p className="mb-8 text-xl md:text-2xl max-w-3xl mx-auto">
-            The Equitable Research Initiative (TERI) is revolutionizing DEI policies to create genuinely inclusive
+            DEI360 is revolutionizing DEI policies to create genuinely inclusive
             workplaces where everyone thrives.
           </p>
           <Link 
@@ -57,7 +54,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg mb-6">
-                At TERI, we believe that true equity goes beyond diversity quotas. We&apos;re committed to reshaping DEI
+                At DEI360, we believe that true equity goes beyond diversity quotas. We&apos;re committed to reshaping DEI
                 policies to focus on meaningful inclusivity and equitable opportunities for all.
               </p>
               <p className="text-lg mb-6">
@@ -105,7 +102,7 @@ export default function LandingPage() {
       {/* Footer */}
       <div>
           <div className="mt-8 mb-8 pt-8 border-t border-gray-800 text-center">
-            <p>&copy; {new Date().getFullYear()} The Equitable Research Initiative (TERI). All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} DEI360. All rights reserved.</p>
           </div>
         </div>
     </div>
