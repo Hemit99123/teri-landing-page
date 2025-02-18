@@ -126,7 +126,7 @@ export default function InterviewPageFinal() {
           <div className="space-y-8">
             <h2 className="text-3xl font-bold mb-6 relative">
               Key Insights
-              <span className="absolute bottom-0 left-0 w-1/4 h-1 bg-white"></span>
+              <span className="absolute bottom-0 left-0 w-1/3 h-1 bg-white"></span>
             </h2>
             {["Inclusive Innovation", "Future of DEI", "Overcoming Bias", "Measuring Impact"].map((insight, index) => (
               <div key={index} className="group">
