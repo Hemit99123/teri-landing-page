@@ -100,6 +100,36 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Interview Section */}
+<section id="interview" className="py-20 bg-white text-black">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold mb-12 text-center">An Interview with Paolo Guadiano</h2>
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p className="text-lg mb-6">
+          We had the privilege of speaking with Paolo Guadiano, a TEDx speaker and expert in diversity.
+        </p>
+        <Link 
+          href="/paolo-gaudiano" 
+          className="mt-6 w-1/2 bg-black text-white px-6 py-3 text-lg font-semibold rounded-lg transition flex items-center justify-center text-center mx-auto"
+        >
+          Watch the full interview <ArrowRight className="ml-2" />
+        </Link>
+      </div>
+      <div className="relative h-96">
+        <Image
+          src="/person/paolo-tedx.png" 
+          alt="Paolo Guadiano - TEDx Speaker"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
       <Footer />
 
     </div>
