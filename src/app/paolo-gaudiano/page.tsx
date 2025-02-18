@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { Play, Pause, Maximize, Linkedin } from "lucide-react";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function InterviewPageFinal() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -141,9 +142,7 @@ export default function InterviewPageFinal() {
         </div>
       </main>
 
-      <footer className="mt-16 text-center text-gray-500 pb-8">
-        <p>© 2025 DEI360. Empowering diversity, equity, and inclusion.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

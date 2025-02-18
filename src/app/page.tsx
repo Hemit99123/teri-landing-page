@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { ArrowRight, Target, Zap, RefreshCw } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link";
@@ -99,12 +100,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <div>
-          <div className="mt-8 mb-8 pt-8 border-t border-gray-800 text-center">
-            <p>&copy; {new Date().getFullYear()} DEI360. All rights reserved.</p>
-          </div>
-        </div>
+      <Footer />
+
     </div>
   )
 }
