@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { Play, Pause, Maximize, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function InterviewPageFinal() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -37,9 +38,16 @@ export default function InterviewPageFinal() {
         <div className="text-center p-8">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">Paolo Gaudiano</h1>
           <p className="text-2xl md:text-3xl mb-8 text-gray-300">An Expert in Diversity & Inclusion</p>
-          <button className="bg-white text-black hover:bg-gray-200 text-lg py-3 px-8 rounded-full transition-transform transform hover:scale-105">
-            Access full report
-          </button>
+          <div className="mx-auto lex space-x-2">
+            <Link href="/nowhere" className="bg-white text-black hover:bg-gray-200 text-lg py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+              Access full report
+            </Link>
+            
+            <Link href="/reports/paolo-meeting-planner" className="bg-white text-black hover:bg-gray-200 text-lg py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+              Access meeting planner
+            </Link>
+          </div>
+
         </div>
       </div>
 
