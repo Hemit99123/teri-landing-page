@@ -9,7 +9,6 @@ import Link from "next/link"
 export default function InterviewPageFinal() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false)
   const [showControls, setShowControls] = useState<boolean>(true)
-  const [isEditedVersion, setIsEditedVersion] = useState<boolean>(true)
   const videoRef = useRef<HTMLVideoElement | null>(null)
 
   const togglePlay = () => {
@@ -34,7 +33,6 @@ export default function InterviewPageFinal() {
   }
 
   const toggleVideoVersion = () => {
-    setIsEditedVersion(!isEditedVersion)
     if (videoRef.current) {
       videoRef.current.pause()
       setIsPlaying(false)
@@ -77,7 +75,7 @@ export default function InterviewPageFinal() {
             >
               <video
                 ref={videoRef}
-                src={isEditedVersion ? "/videos/interview-edited.mp4" : "/videos/interview-raw.mp4"}
+                src={"/videos/interview-raw.mp4"}
                 className="w-full h-auto rounded-lg"
                 controls={false}
                 onPlay={() => setShowControls(false)}
@@ -113,13 +111,6 @@ export default function InterviewPageFinal() {
                     />
                     <div className="flex space-x-4">
                       <Maximize className="h-6 w-6 cursor-pointer" onClick={toggleFullScreen} />
-                      <button
-                        className="flex items-center space-x-2 bg-white text-black px-3 py-1 rounded-full text-sm"
-                        onClick={toggleVideoVersion}
-                      >
-                        <Edit className="h-4 w-4" />
-                        <span>{isEditedVersion ? "View Raw Unedited" : "View Edited"}</span>
-                      </button>
                     </div>
                   </div>
                 </div>
