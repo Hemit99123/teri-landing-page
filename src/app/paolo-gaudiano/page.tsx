@@ -67,7 +67,7 @@ export default function InterviewPageFinal() {
 
       <main className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-12 mb-16">
-          <div className="col-span-2">
+          <div className="col-span-full">
             <div
               className="relative aspect-video mb-8"
               onMouseEnter={() => setShowControls(true)}
@@ -146,22 +146,6 @@ export default function InterviewPageFinal() {
             </div>
           </div>
 
-          <div className="space-y-8">
-            <h2 className="text-3xl font-bold mb-6 relative">
-              Key Insights
-              <span className="absolute bottom-0 left-0 w-1/3 h-1 bg-white"></span>
-            </h2>
-            {["Inclusive Innovation", "Future of DEI", "Overcoming Bias", "Measuring Impact"].map((insight, index) => (
-              <div key={index} className="group">
-                <h3 className="text-xl font-semibold mb-2 transition-transform transform group-hover:translate-x-2">
-                  {insight}
-                </h3>
-                <p className="text-gray-400">
-                  Discover groundbreaking perspectives on {insight.toLowerCase()} in the workplace.
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </main>
 
