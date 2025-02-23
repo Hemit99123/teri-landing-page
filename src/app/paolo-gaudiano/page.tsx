@@ -98,7 +98,7 @@ export default function InterviewPageFinal() {
                   <div className="flex items-center justify-between text-white">
                     <input
                       type="range"
-                      className="w-2/3"
+                      className="w-full"
                       min="0"
                       max="100"
                       defaultValue="0"
@@ -109,7 +109,7 @@ export default function InterviewPageFinal() {
                         }
                       }}
                     />
-                    <div className="flex space-x-4">
+                    <div className="mx-3 flex space-x-4">
                       <Maximize className="h-6 w-6 cursor-pointer" onClick={toggleFullScreen} />
                     </div>
                   </div>
